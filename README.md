@@ -1,16 +1,76 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: https://your-portfolio-link.com
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+This portfolio website showcases my work, technical skills, and projects as a MERN Stack Developer. It is designed to present full-stack applications, highlight problem-solving ability, and provide a clear way to explore my development experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Responsive and modern user interface
+* Project showcase with live demos and source code
+* Structured sections for skills and experience
+* Clean and accessible design
+* Optimized performance
+
+---
+
+## Tech Stack
+
+Frontend:
+
+* React.js
+* Tailwind CSS
+* JavaScript
+
+Tools:
+
+* Git
+* GitHub
+* VS Code
+
+---
+
+## Project Structure
+
+src/
+components/
+pages/
+assets/
+
+---
+
+## Installation
+
+Clone the repository and run locally:
+
+git clone https://github.com/your-username/my-portfolio
+cd my-portfolio
+npm install
+npm start
+
+---
+
+## Deployment
+
+This project is deployed and available at:
+https://your-portfolio-link.com
+
+---
+
+## Contact
+
+Email: [yourmail@gmail.com](mailto:yourmail@gmail.com)
+LinkedIn: https://linkedin.com/in/your-profile
+GitHub: https://github.com/your-username
+
+---
+
+## License
+
+This project is open-source and available under the MIT License.
