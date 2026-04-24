@@ -13,7 +13,7 @@ function Hero() {
         </p>
         
         <p className="mt-4 text-gray-400">
-          Transforming complex logic into scalable web solutions. Currently mastering high-performance architecture through 250+ CodeKata challenges.
+          Performance-driven developer specializing in the MERN ecosystem and scalable web solutions.
         </p>
 
         <div className="mt-8 flex flex-col md:flex-row gap-4">
@@ -25,7 +25,7 @@ function Hero() {
           </a>
           <a 
             href="/Mohamed_Zaid_Resume.pdf" 
-            download
+            download="Mohamed_Zaid_Resume.pdf"
             className="px-8 py-3 border border-gray-800 rounded-lg font-bold text-center hover:bg-white hover:text-black transition-all"
           >
             Download Resume
