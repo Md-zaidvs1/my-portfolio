@@ -1,18 +1,61 @@
+import React, { useState } from 'react';
+import { HiMenuAlt3, HiX } from 'react-icons/hi';
+
 function Navbar() {
-  const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+  const [nav, setNav] = useState(false);
+
+  const navLinks = [
+    { name: 'Home', link: '#home' },
+    { name: 'About', link: '#about' },
+    { name: 'Skills', link: '#skills' },
+    { name: 'Projects', link: '#projects' },
+    { name: 'Contact', link: '#contact' },
+  ];
 
   return (
-    <nav className="flex justify-between items-center p-5 bg-gray-800 text-white sticky top-0 z-50">
-      <h1 className="text-xl font-bold">My Portfolio</h1>
-      <ul className="flex gap-6">
-        <li onClick={() => scrollTo("home")} className="cursor-pointer hover:text-blue-400">Home</li>
-        <li onClick={() => scrollTo("about")} className="cursor-pointer hover:text-blue-400">About</li>
-        <li onClick={() => scrollTo("projects")} className="cursor-pointer hover:text-blue-400">Projects</li>
-        <li onClick={() => scrollTo("contact")} className="cursor-pointer hover:text-blue-400">Contact</li>
-      </ul>
+    <nav className="fixed w-full h-20 bg-black/90 backdrop-blur-sm z-50 border-b border-zinc-900">
+      <div className="flex justify-between items-center w-full h-full px-6 md:px-20">
+        <div>
+          <h1 className="text-xl font-bold tracking-tighter text-white">
+            My <span className="text-emerald-500">Portfolio</span>
+          </h1>
+        </div>
+
+        <ul className="hidden md:flex gap-8">
+          {navLinks.map((item, index) => (
+            <li key={index}>
+              <a
+                href={item.link}
+                className="text-sm font-medium text-gray-400 hover:text-emerald-500 transition-colors uppercase tracking-widest"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <div onClick={() => setNav(!nav)} className="md:hidden z-50 text-white cursor-pointer">
+          {!nav ? <HiMenuAlt3 size={30} /> : <HiX size={30} />}
+        </div>
+
+        <ul
+          className={`${
+            !nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center'
+          }`}
+        >
+          {navLinks.map((item, index) => (
+            <li key={index} className="py-6 text-2xl">
+              <a
+                onClick={() => setNav(!nav)}
+                href={item.link}
+                className="text-gray-400 hover:text-emerald-500 uppercase tracking-widest"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }
