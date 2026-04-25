@@ -13,7 +13,7 @@ function Hero() {
         </p>
         
         <p className="mt-4 text-gray-400">
-          Performance-driven developer specializing in the MERN ecosystem and scalable web solutions.
+          Performance-driven developer specializing in the MERN ecosystem. Expert in architecting scalable web solutions and optimizing backend efficiency.
         </p>
 
         <div className="mt-8 flex flex-col md:flex-row gap-4">
@@ -24,8 +24,8 @@ function Hero() {
             View Projects
           </a>
           <a 
-            href="/Mohamed_Zaid_Resume.pdf" 
-            download="Mohamed_Zaid_Resume.pdf"
+            href="/Mohamed_Zaid_MERN_Stack_Developer-71.pdf" 
+            download="Mohamed_Zaid_MERN_Stack_Developer-71.pdf"
             className="px-8 py-3 border border-gray-800 rounded-lg font-bold text-center hover:bg-white hover:text-black transition-all"
           >
             Download Resume
